@@ -72,5 +72,3 @@ SELECT 'products' AS table_name, count(*) FROM products;
 ✨ *This repository sets up the foundation for further analytics, machine learning, and BI exploration.*
 
 ---
-
-Azamat, do you want me to also add **badges** (e.g., PostgreSQL, Python, Kaggle, pgAdmin) at the top of the README to make it even more modern and stylish?
