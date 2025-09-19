@@ -4,9 +4,16 @@ import datetime
 import psycopg2
 from faker import Faker
 import traceback
+import os
 
 # --- CONFIG ---
-DB = {"host":"localhost", "port":5432, "dbname":"postgres", "user":"postgres", "password":"Azamat06"}
+DB = {
+    "host": os.getenv("DB_HOST", "localhost"),
+    "port": int(os.getenv("DB_PORT", "5432")),
+    "dbname": os.getenv("DB_NAME", "postgres"),
+    "user": os.getenv("DB_USER", "postgres"),
+    "password": os.getenv("DB_PASSWORD", "")
+}
 NUM_PRODUCTLINES = 6
 NUM_OFFICES = 6
 NUM_EMPLOYEES = 30
@@ -64,6 +71,8 @@ def safe_smallint(n):
 
 def connect():
     d = DB
+    if not d["password"]:
+        raise ValueError("Database password is required. Please set DB_PASSWORD environment variable.")
     conn = psycopg2.connect(host=d["host"], port=d["port"], dbname=d["dbname"],
                             user=d["user"], password=d["password"])
     conn.autocommit = False
