@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 """
-run_classicmodels_queries.py
-
 Run a set of pre-defined SQL queries against a PostgreSQL database (schema: classicmodels),
 print results to the terminal, and optionally save each result to CSV.
 
