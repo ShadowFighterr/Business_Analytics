@@ -70,8 +70,8 @@ SELECT 'products' AS table_name, count(*) FROM products;
 ````markdown
 # 10 Analytical Topics
 
-This main.py script runs a set of **10 analytical SQL queries** against a PostgreSQL database 
-containing the `classicmodels` schema. It connects to the database, executes each query, 
+The main.py script runs a set of **10 analytical SQL queries** against a PostgreSQL database 
+containing the schema on the image above. It connects to the database, executes each query, 
 prints the results in a readable CLI table, and (optionally) saves them to CSV files.
 
 ## Features
@@ -96,7 +96,7 @@ prints the results in a readable CLI table, and (optionally) saves them to CSV f
 ## Requirements
 
 - Python 3.8+
-- PostgreSQL database with `classicmodels` schema  
+- Connection with PostgreSQL database   
 - Python libraries:
   ```bash
   pip install psycopg2-binary tabulate
