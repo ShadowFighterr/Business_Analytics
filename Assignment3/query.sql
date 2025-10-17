@@ -57,3 +57,14 @@ UPDATE classicmodels.customers SET latitude = 22.3193,  longitude = 114.1694  WH
 UPDATE classicmodels.customers SET latitude = 1.3521,   longitude = 103.8198  WHERE city = 'Singapore';
 UPDATE classicmodels.customers SET latitude = -33.8688, longitude = 151.2093  WHERE city = 'Sydney';
 UPDATE classicmodels.customers SET latitude = -37.8136, longitude = 144.9631  WHERE city = 'Melbourne';
+
+
+UPDATE classicmodels.customers
+SET
+    -- Генерируем случайную широту в диапазоне от -90 до +90
+    latitude = (RANDOM() * 180) - 90,
+
+    -- Генерируем случайную долготу в диапазоне от -180 до +180
+    longitude = (RANDOM() * 360) - 180
+WHERE
+    latitude IS NULL OR longitude IS NULL;
