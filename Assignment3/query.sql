@@ -68,3 +68,31 @@ SET
     longitude = (RANDOM() * 360) - 180
 WHERE
     latitude IS NULL OR longitude IS NULL;
+
+
+-- 1. Select data from the dynamic (live database) source
+SELECT
+    p.amount,
+    p.paymentdate,
+    c.customername,
+    'Dynamic File (Live DB)' AS source_type  -- Label for the dynamic line
+FROM
+    payments p
+JOIN
+    customers c ON p.customerNumber = c.customerNumber -- FIX 1: Add the correct JOIN condition
+WHERE
+    p.paymentdate IS NOT NULL -- Optional: ensure only records with dates are compared
+
+UNION ALL
+
+-- 2. Select data from the static (CSV) source
+SELECT
+    amount,
+    CAST(paymentdate AS DATE) AS paymentdate, -- FIX 2: Explicitly cast the 'TEXT' paymentdate to DATE
+    customername,
+    'Static File (CSV)' AS source_type  -- Label for the static line
+FROM
+    "static file"
+WHERE
+    paymentdate IS NOT NULL -- Optional: ensure only records with dates are compared
+
