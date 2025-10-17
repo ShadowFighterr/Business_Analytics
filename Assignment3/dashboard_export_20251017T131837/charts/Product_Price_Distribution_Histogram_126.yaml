@@ -1,0 +1,35 @@
+slice_name: Product Price Distribution Histogram
+description: null
+certified_by: null
+certification_details: null
+viz_type: histogram_v2
+params:
+  datasource: 28__table
+  viz_type: histogram_v2
+  column: priceeach
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    subject: orderdate
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  row_limit: 10000
+  bins: 5
+  color_scheme: supersetColors
+  show_legend: true
+  x_axis_title: Price range
+  x_axis_format: SMART_NUMBER
+  y_axis_title: Amount of product
+  y_axis_format: SMART_NUMBER
+  extra_form_data: {}
+  dashboards:
+  - 12
+query_context: '{"datasource":{"id":28,"type":"table"},"force":false,"queries":[{"filters":[{"col":"orderdate","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["priceeach"],"annotation_layers":[],"row_limit":10000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[{"operation":"histogram","options":{"column":"priceeach","groupby":[],"bins":5}}]}],"form_data":{"datasource":"28__table","viz_type":"histogram_v2","column":"priceeach","groupby":[],"adhoc_filters":[{"clause":"WHERE","subject":"orderdate","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"row_limit":10000,"bins":5,"color_scheme":"supersetColors","show_legend":true,"x_axis_title":"Price
+  range","x_axis_format":"SMART_NUMBER","y_axis_title":"Amount of product","y_axis_format":"SMART_NUMBER","extra_form_data":{},"dashboards":[12],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: c25ae703-439b-45b1-9c0f-0a313bb333d6
+version: 1.0.0
+dataset_uuid: d378a689-2396-4545-939c-38e04dcab681

@@ -1,0 +1,953 @@
+dashboard_title: Business Analytics
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: true
+uuid: a4e6e48a-2196-44c4-81a2-23c588b58e1f
+position:
+  CHART-4bwyWmVp1orLQWQYNiiSH:
+    children: []
+    id: CHART-4bwyWmVp1orLQWQYNiiSH
+    meta:
+      chartId: 132
+      height: 77
+      sliceName: Country Map
+      uuid: a2d98af1-c06c-4b1a-9957-3724423e0438
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-jNkpA54CNJp1KTj7b_3Fu
+    type: CHART
+  CHART-Ghb8xU81DkyfiGp0-ojbK:
+    children: []
+    id: CHART-Ghb8xU81DkyfiGp0-ojbK
+    meta:
+      chartId: 134
+      height: 50
+      sliceName: Product Contribution to Total Revenue
+      uuid: 074c1557-8133-4e3b-87e1-a99e7259eb08
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-vEHej0BmApddf6ewsgqir
+    type: CHART
+  CHART-LWqZ_8z9RBrT5W2RzSBgZ:
+    children: []
+    id: CHART-LWqZ_8z9RBrT5W2RzSBgZ
+    meta:
+      chartId: 133
+      height: 50
+      sliceName: Sales Hierarchy by Product
+      uuid: 66d8f753-c9ab-469f-80c2-16d9e4df20aa
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-vEHej0BmApddf6ewsgqir
+    type: CHART
+  CHART-XfVFpjsIUt_83jMKpDwY4:
+    children: []
+    id: CHART-XfVFpjsIUt_83jMKpDwY4
+    meta:
+      chartId: 136
+      height: 77
+      sliceName: Live Action in Changes
+      uuid: 831c3d3f-c262-4ad2-a47a-6ecb510a95ce
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-jNkpA54CNJp1KTj7b_3Fu
+    type: CHART
+  CHART-cm4Sia1iSG1_jw2GyEBGd:
+    children: []
+    id: CHART-cm4Sia1iSG1_jw2GyEBGd
+    meta:
+      chartId: 135
+      height: 50
+      sliceName: Most Popular Products
+      uuid: 13dd1ec4-24f1-42df-9f51-a16bc71e49d7
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-vEHej0BmApddf6ewsgqir
+    type: CHART
+  CHART-eHqupF7hwYoaT1TgvIoMU:
+    children: []
+    id: CHART-eHqupF7hwYoaT1TgvIoMU
+    meta:
+      chartId: 129
+      height: 77
+      sliceName: Product Line Popularity by Country
+      uuid: 0c57e47f-2d81-4ef8-836f-308f1a4ed6bb
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-tNcoV_1UEeyPfr7uK5r4G
+    type: CHART
+  CHART-explore-121-1:
+    children: []
+    id: CHART-explore-121-1
+    meta:
+      chartId: 121
+      height: 50
+      sliceName: Order Status Distribution
+      uuid: efc66e69-7c9e-4d45-a061-b66b6f2fc69f
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-8Dsq3NdEJyPZ6COMH4M0A
+    type: CHART
+  CHART-explore-123-1:
+    children: []
+    id: CHART-explore-123-1
+    meta:
+      chartId: 123
+      height: 50
+      sliceName: Sales Details with Products
+      uuid: 4f53baec-8362-4a34-892b-628c461ca224
+      width: 8
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-8Dsq3NdEJyPZ6COMH4M0A
+    type: CHART
+  CHART-explore-124-1:
+    children: []
+    id: CHART-explore-124-1
+    meta:
+      chartId: 124
+      height: 50
+      sliceName: Sales Volume Over Time
+      uuid: 51abb65c-7fbd-4f85-995c-5de74474272d
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-GQs6BtaBRUC0jCE3FU6Xr
+    type: CHART
+  CHART-explore-125-1:
+    children: []
+    id: CHART-explore-125-1
+    meta:
+      chartId: 125
+      height: 50
+      sliceName: Price vs. Quantity in Orders
+      uuid: 5f776e08-92f6-4084-bc22-d08446694fd6
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-GQs6BtaBRUC0jCE3FU6Xr
+    type: CHART
+  CHART-explore-126-1:
+    children: []
+    id: CHART-explore-126-1
+    meta:
+      chartId: 126
+      height: 50
+      sliceName: Product Price Distribution Histogram
+      uuid: c25ae703-439b-45b1-9c0f-0a313bb333d6
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-GQs6BtaBRUC0jCE3FU6Xr
+    type: CHART
+  CHART-explore-127-1:
+    children: []
+    id: CHART-explore-127-1
+    meta:
+      chartId: 127
+      height: 77
+      sliceName: Top 10 Customers by spend
+      uuid: 03c3c916-aef4-4205-ab44-538f3cab7fb2
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-jNkpA54CNJp1KTj7b_3Fu
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-8Dsq3NdEJyPZ6COMH4M0A
+    - ROW-GQs6BtaBRUC0jCE3FU6Xr
+    - ROW-jNkpA54CNJp1KTj7b_3Fu
+    - ROW-vEHej0BmApddf6ewsgqir
+    - ROW-tNcoV_1UEeyPfr7uK5r4G
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Business Analytics
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-8Dsq3NdEJyPZ6COMH4M0A:
+    children:
+    - CHART-explore-121-1
+    - CHART-explore-123-1
+    id: ROW-8Dsq3NdEJyPZ6COMH4M0A
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-GQs6BtaBRUC0jCE3FU6Xr:
+    children:
+    - CHART-explore-124-1
+    - CHART-explore-125-1
+    - CHART-explore-126-1
+    id: ROW-GQs6BtaBRUC0jCE3FU6Xr
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-jNkpA54CNJp1KTj7b_3Fu:
+    children:
+    - CHART-explore-127-1
+    - CHART-XfVFpjsIUt_83jMKpDwY4
+    - CHART-eHqupF7hwYoaT1TgvIoMU
+    id: ROW-jNkpA54CNJp1KTj7b_3Fu
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-tNcoV_1UEeyPfr7uK5r4G:
+    children:
+    - CHART-4bwyWmVp1orLQWQYNiiSH
+    id: ROW-tNcoV_1UEeyPfr7uK5r4G
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-vEHej0BmApddf6ewsgqir:
+    children:
+    - CHART-Ghb8xU81DkyfiGp0-ojbK
+    - CHART-LWqZ_8z9RBrT5W2RzSBgZ
+    - CHART-cm4Sia1iSG1_jw2GyEBGd
+    id: ROW-vEHej0BmApddf6ewsgqir
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '121':
+      id: 121
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 123
+        - 124
+        - 125
+        - 126
+        - 127
+        - 129
+        - 132
+        - 133
+        - 134
+        - 135
+        - 136
+    '123':
+      id: 123
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 124
+        - 125
+        - 126
+        - 127
+        - 129
+        - 132
+        - 133
+        - 134
+        - 135
+        - 136
+    '124':
+      id: 124
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 123
+        - 125
+        - 126
+        - 127
+        - 129
+        - 132
+        - 133
+        - 134
+        - 135
+        - 136
+    '125':
+      id: 125
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 123
+        - 124
+        - 126
+        - 127
+        - 129
+        - 132
+        - 133
+        - 134
+        - 135
+        - 136
+    '127':
+      id: 127
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 123
+        - 124
+        - 125
+        - 126
+        - 129
+        - 132
+        - 133
+        - 134
+        - 135
+        - 136
+    '132':
+      id: 132
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 123
+        - 124
+        - 125
+        - 126
+        - 127
+        - 129
+        - 133
+        - 134
+        - 135
+        - 136
+    '133':
+      id: 133
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 123
+        - 124
+        - 125
+        - 126
+        - 127
+        - 129
+        - 132
+        - 134
+        - 135
+        - 136
+    '134':
+      id: 134
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 123
+        - 124
+        - 125
+        - 126
+        - 127
+        - 129
+        - 132
+        - 133
+        - 135
+        - 136
+    '136':
+      id: 136
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 121
+        - 123
+        - 124
+        - 125
+        - 126
+        - 127
+        - 129
+        - 132
+        - 133
+        - 134
+        - 135
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 121
+    - 123
+    - 124
+    - 125
+    - 126
+    - 127
+    - 129
+    - 132
+    - 133
+    - 134
+    - 135
+    - 136
+  map_label_colors:
+    Shipped: '#1FA8C9'
+    Resolved: '#454E7C'
+    In Process: '#5AC189'
+    On Hold: '#FF7F44'
+    Cancelled: '#666666'
+    Disputed: '#E04355'
+    priceeach: '#1FA8C9'
+    Total Sales: '#1FA8C9'
+    Total Spend: '#1FA8C9'
+    Daily Sales Total: '#1FA8C9'
+    Classic Cars: '#1FA8C9'
+    Vintage Cars: '#454E7C'
+    Trucks and Buses: '#5AC189'
+    Planes: '#FF7F44'
+    Ships: '#666666'
+    Motorcycles: '#E04355'
+    Trains: '#FCC700'
+    SUM(amount): '#1FA8C9'
+    1940 Ford Delivery Sedan: '#5AC189'
+    1936 Mercedes-Benz 500K Special Roadster: '#FF7F44'
+    Last Model: '#666666'
+    New Model: '#E04355'
+    1938 Cadillac V-16 Presidential Limousine: '#FCC700'
+    1936 Mercedes Benz 500k Roadster: '#A868B7'
+    1928 Mercedes-Benz SSK: '#3CCCCB'
+    1911 Ford Town Car: '#A38F79'
+    1932 Model A Ford J-Coupe: '#8FD3E4'
+    1913 Ford Model T Speedster: '#A1A6BD'
+    1941 Chevrolet Special Deluxe Cabriolet: '#ACE1C4'
+    Board Series: '#FEC0A1'
+    1917 Grand Touring Sedan: '#B2B2B2'
+    Arm Series: '#EFA1AA'
+    Fine Series: '#FDE380'
+    Cost Edition: '#D3B3DA'
+    1917 Maxwell Touring Car: '#9EE5E5'
+    1939 Cadillac Limousine: '#D1C6BC'
+    For Edition: '#9EE5E5'
+    Tonight Replica: '#D1C6BC'
+    Letter Model: '#454E7C'
+    Administration Edition: '#5AC189'
+    1912 Ford Model T Delivery Wagon: '#FF7F44'
+    1939 Chevrolet Deluxe Coupe: '#666666'
+    18th Century Vintage Horse Carriage: '#E04355'
+    Good Series: '#FCC700'
+    City Series: '#A868B7'
+    1934 Ford V8 Coupe: '#3CCCCB'
+    1932 Alfa Romeo 8C2300 Spider Sport: '#A38F79'
+    1928 Ford Phaeton Deluxe: '#8FD3E4'
+    Action Model: '#A1A6BD'
+    Woman Replica: '#ACE1C4'
+    1930 Buick Marquette Phaeton: '#FEC0A1'
+    Interesting Edition: '#B2B2B2'
+    1903 Ford Model A: '#EFA1AA'
+    Movie Edition: '#FDE380'
+    Project Series: '#D3B3DA'
+    Only Replica: '#D3B3DA'
+    Become Model: '#9EE5E5'
+    Short Model: '#D1C6BC'
+    1937 Horch 930V Limousine: '#454E7C'
+    1936 Chrysler Airflow: '#5AC189'
+    Culture Edition: '#FF7F44'
+    Standard Edition: '#666666'
+    Oil Model: '#E04355'
+    1937 Lincoln Berline: '#FCC700'
+    Mr Edition: '#A868B7'
+    Pay Model: '#3CCCCB'
+    1904 Buick Runabout: '#A38F79'
+    Know Replica: '#8FD3E4'
+    1964 Mercedes Tour Bus: '#A1A6BD'
+    Season Series: '#ACE1C4'
+    1957 Chevy Pickup: '#FEC0A1'
+    Nature Replica: '#B2B2B2'
+    1962 Volkswagen Microbus: '#EFA1AA'
+    Fill Replica: '#FDE380'
+    During Model: '#FDE380'
+    1954 Greyhound Scenicruiser: '#D3B3DA'
+    Diamond T620 Semi-Skirted Tanker: '#9EE5E5'
+    Price Edition: '#D1C6BC'
+    Business Model: '#454E7C'
+    Thing Replica: '#FF7F44'
+    Performance Model: '#666666'
+    1958 Setra Bus: '#E04355'
+    1940 Ford Pickup Truck: '#FCC700'
+    Able Series: '#A868B7'
+    Recently Edition: '#3CCCCB'
+    Assume Edition: '#A38F79'
+    Dream Replica: '#8FD3E4'
+    1926 Ford Fire Engine: '#A1A6BD'
+    Probably Edition: '#ACE1C4'
+    Tax Series: '#FEC0A1'
+    1940s Ford truck: '#B2B2B2'
+    Senior Replica: '#EFA1AA'
+    1996 Peterbilt 379 Stake Bed with Outrigger: '#B2B2B2'
+    Do Model: '#EFA1AA'
+    Life Model: '#FDE380'
+    Season Edition: '#D3B3DA'
+    Phone Model: '#9EE5E5'
+    Expect Series: '#D1C6BC'
+    Girl Edition: '#454E7C'
+    "1980\xE2\x80\x99s GM Manhattan Express": '#5AC189'
+    Like Model: '#FF7F44'
+    2002 Chevy Corvette: '#666666'
+    1970 Plymouth Hemi Cuda: '#E04355'
+    Concern Model: '#FCC700'
+    1972 Alfa Romeo GTA: '#A868B7'
+    1970 Triumph Spitfire: '#3CCCCB'
+    1962 LanciaA Delta 16V: '#A38F79'
+    North Series: '#8FD3E4'
+    1948 Porsche 356-A Roadster: '#A1A6BD'
+    1965 Aston Martin DB5: '#ACE1C4'
+    1971 Alpine Renault 1600s: '#FEC0A1'
+    Listen Edition: '#FEC0A1'
+    Experience Series: '#B2B2B2'
+    Claim Replica: '#EFA1AA'
+    1968 Dodge Charger: '#FDE380'
+    Customer Series: '#D3B3DA'
+    Candidate Edition: '#9EE5E5'
+    1969 Dodge Super Bee: '#D1C6BC'
+    1958 Chevy Corvette Limited Edition: '#454E7C'
+    1956 Porsche 356A Coupe: '#5AC189'
+    View Model: '#FF7F44'
+    1961 Chevrolet Impala: '#666666'
+    1948 Porsche Type 356 Roadster: '#E04355'
+    1968 Ford Mustang: '#FCC700'
+    Among Edition: '#A868B7'
+    1957 Corvette Convertible: '#3CCCCB'
+    Just Series: '#A38F79'
+    Treatment Model: '#8FD3E4'
+    1969 Chevrolet Camaro Z28: '#A1A6BD'
+    Ability Series: '#ACE1C4'
+    1957 Ford Thunderbird: '#ACE1C4'
+    1969 Ford Falcon: '#FEC0A1'
+    1998 Chrysler Plymouth Prowler: '#B2B2B2'
+    Pattern Replica: '#EFA1AA'
+    1993 Mazda RX-7: '#FDE380'
+    1966 Shelby Cobra 427 S/C: '#D3B3DA'
+    What Series: '#9EE5E5'
+    1969 Corvair Monza: '#D1C6BC'
+    1969 Dodge Charger: '#454E7C'
+    Everyone Series: '#5AC189'
+    1949 Jaguar XK 120: '#FF7F44'
+    Way Replica: '#666666'
+    Wide Series: '#E04355'
+    1982 Camaro Z28: '#FCC700'
+    1952 Alpine Renault 1300: '#A868B7'
+    Air Replica: '#3CCCCB'
+    1985 Toyota Supra: '#A38F79'
+    1952 Citroen-15CV: '#8FD3E4'
+    1976 Ford Gran Torino: '#A1A6BD'
+    1970 Chevy Chevelle SS 454: '#A1A6BD'
+    Safe Edition: '#ACE1C4'
+    1970 Dodge Coronet: '#FEC0A1'
+    1995 Honda Civic: '#B2B2B2'
+    1982 Lamborghini Diablo: '#EFA1AA'
+    Pay Series: '#FDE380'
+    Who Edition: '#D3B3DA'
+    1992 Porsche Cayenne Turbo Silver: '#9EE5E5'
+    Adult Edition: '#D1C6BC'
+    Prove Series: '#454E7C'
+    Reveal Replica: '#5AC189'
+    Million Model: '#FF7F44'
+    Call Replica: '#666666'
+    1992 Ferrari 360 Spider red: '#E04355'
+    2001 Ferrari Enzo: '#FCC700'
+    1999 Indy 500 Monte Carlo SS: '#A868B7'
+    1969 Harley Davidson Ultimate Chopper: '#3CCCCB'
+    1960 BSA Gold Star DBD34: '#A38F79'
+    1974 Ducati 350 Mk3 Desmo: '#8FD3E4'
+    1957 Vespa GS150: '#8FD3E4'
+    Share Edition: '#A1A6BD'
+    1997 BMW R 1100 S: '#ACE1C4'
+    1936 Harley Davidson El Knucklehead: '#FEC0A1'
+    Want Edition: '#B2B2B2'
+    2002 Yamaha YZR M1: '#EFA1AA'
+    2003 Harley-Davidson Eagle Drag Bike: '#FDE380'
+    Attention Model: '#D3B3DA'
+    Choose Replica: '#9EE5E5'
+    1996 Moto Guzzi 1100i: '#D1C6BC'
+    Sometimes Replica: '#454E7C'
+    Best Edition: '#5AC189'
+    1997 BMW F650 ST: '#FF7F44'
+    Walk Replica: '#666666'
+    What Edition: '#FCC700'
+    2002 Suzuki XREO: '#A868B7'
+    Democrat Series: '#3CCCCB'
+    1982 Ducati 900 Monster: '#A38F79'
+    1982 Ducati 996 R: '#3CCCCB'
+    Like Series: '#A38F79'
+    Shake Edition: '#8FD3E4'
+    The Mayflower: '#A1A6BD'
+    The Titanic: '#ACE1C4'
+    The Queen Mary: '#FEC0A1'
+    Must Replica: '#B2B2B2'
+    1999 Yamaha Speed Boat: '#EFA1AA'
+    Light Series: '#FDE380'
+    Garden Series: '#D3B3DA'
+    Work Model: '#9EE5E5'
+    Cut Edition: '#D1C6BC'
+    The USS Constitution Ship: '#454E7C'
+    Material Model: '#5AC189'
+    Single Series: '#FF7F44'
+    Shoulder Series: '#E04355'
+    World Model: '#FCC700'
+    18th century schooner: '#A868B7'
+    Ever Edition: '#FCC700'
+    Market Series: '#A868B7'
+    Develop Model: '#3CCCCB'
+    South Model: '#A38F79'
+    Me Model: '#8FD3E4'
+    Dinner Replica: '#A1A6BD'
+    Pont Yacht: '#ACE1C4'
+    The Schooner Bluenose: '#FEC0A1'
+    Easy Model: '#B2B2B2'
+    Personal Series: '#EFA1AA'
+    HMS Bounty: '#FDE380'
+    Land Series: '#D3B3DA'
+    1900s Vintage Tri-Plane: '#9EE5E5'
+    Fish Edition: '#D1C6BC'
+    West Series: '#454E7C'
+    Act Edition: '#5AC189'
+    Gun Series: '#666666'
+    Responsibility Model: '#E04355'
+    Less Series: '#666666'
+    Officer Edition: '#E04355'
+    'American Airlines: MD-11S': '#FCC700'
+    Corsair F4U ( Bird Cage): '#A868B7'
+    Price Series: '#3CCCCB'
+    P-51-D Mustang: '#A38F79'
+    'American Airlines: B767-300': '#8FD3E4'
+    Pull Series: '#A1A6BD'
+    Boeing X-32A JSF: '#ACE1C4'
+    America West Airlines B757-200: '#FEC0A1'
+    1900s Vintage Bi-Plane: '#B2B2B2'
+    Show Replica: '#EFA1AA'
+    'ATA: B757-300': '#FDE380'
+    Side Model: '#D3B3DA'
+    F/A 18 Hornet 1/72: '#9EE5E5'
+    Figure Edition: '#D1C6BC'
+    Create Model: '#454E7C'
+    Book Edition: '#5AC189'
+    1928 British Royal Navy Airplane: '#FF7F44'
+    1980s Black Hawk Helicopter: '#FF7F44'
+    Represent Model: '#666666'
+    Behavior Series: '#E04355'
+    1950's Chicago Surface Lines Streetcar: '#454E7C'
+    Collectable Wooden Train: '#A868B7'
+    1962 City of Detroit Streetcar: '#3CCCCB'
+  color_scheme: ''
+  refresh_frequency: 10
+  color_scheme_domain: []
+  expanded_slices: {}
+  label_colors: {}
+  shared_label_colors:
+  - 18th Century Vintage Horse Carriage
+  - 18th century schooner
+  - 1900s Vintage Bi-Plane
+  - 1900s Vintage Tri-Plane
+  - 1903 Ford Model A
+  - 1904 Buick Runabout
+  - 1911 Ford Town Car
+  - 1912 Ford Model T Delivery Wagon
+  - 1913 Ford Model T Speedster
+  - 1917 Grand Touring Sedan
+  - 1917 Maxwell Touring Car
+  - 1926 Ford Fire Engine
+  - 1928 British Royal Navy Airplane
+  - 1928 Ford Phaeton Deluxe
+  - 1928 Mercedes-Benz SSK
+  - 1930 Buick Marquette Phaeton
+  - 1932 Alfa Romeo 8C2300 Spider Sport
+  - 1932 Model A Ford J-Coupe
+  - 1934 Ford V8 Coupe
+  - 1936 Chrysler Airflow
+  - 1936 Harley Davidson El Knucklehead
+  - 1936 Mercedes Benz 500k Roadster
+  - 1936 Mercedes-Benz 500K Special Roadster
+  - 1937 Horch 930V Limousine
+  - 1937 Lincoln Berline
+  - 1938 Cadillac V-16 Presidential Limousine
+  - 1939 Cadillac Limousine
+  - 1939 Chevrolet Deluxe Coupe
+  - 1940 Ford Delivery Sedan
+  - 1940 Ford Pickup Truck
+  - 1940s Ford truck
+  - 1941 Chevrolet Special Deluxe Cabriolet
+  - 1948 Porsche 356-A Roadster
+  - 1948 Porsche Type 356 Roadster
+  - 1949 Jaguar XK 120
+  - 1950's Chicago Surface Lines Streetcar
+  - 1952 Alpine Renault 1300
+  - 1952 Citroen-15CV
+  - 1954 Greyhound Scenicruiser
+  - 1956 Porsche 356A Coupe
+  - 1957 Chevy Pickup
+  - 1957 Corvette Convertible
+  - 1957 Ford Thunderbird
+  - 1957 Vespa GS150
+  - 1958 Chevy Corvette Limited Edition
+  - 1958 Setra Bus
+  - 1960 BSA Gold Star DBD34
+  - 1961 Chevrolet Impala
+  - 1962 City of Detroit Streetcar
+  - 1962 LanciaA Delta 16V
+  - 1962 Volkswagen Microbus
+  - 1964 Mercedes Tour Bus
+  - 1965 Aston Martin DB5
+  - 1966 Shelby Cobra 427 S/C
+  - 1968 Dodge Charger
+  - 1968 Ford Mustang
+  - 1969 Chevrolet Camaro Z28
+  - 1969 Corvair Monza
+  - 1969 Dodge Charger
+  - 1969 Dodge Super Bee
+  - 1969 Ford Falcon
+  - 1969 Harley Davidson Ultimate Chopper
+  - 1970 Chevy Chevelle SS 454
+  - 1970 Dodge Coronet
+  - 1970 Plymouth Hemi Cuda
+  - 1970 Triumph Spitfire
+  - 1971 Alpine Renault 1600s
+  - 1972 Alfa Romeo GTA
+  - 1974 Ducati 350 Mk3 Desmo
+  - 1976 Ford Gran Torino
+  - 1980s Black Hawk Helicopter
+  - "1980\xE2\x80\x99s GM Manhattan Express"
+  - 1982 Camaro Z28
+  - 1982 Ducati 900 Monster
+  - 1982 Ducati 996 R
+  - 1982 Lamborghini Diablo
+  - 1985 Toyota Supra
+  - 1992 Ferrari 360 Spider red
+  - 1992 Porsche Cayenne Turbo Silver
+  - 1993 Mazda RX-7
+  - 1995 Honda Civic
+  - 1996 Moto Guzzi 1100i
+  - 1996 Peterbilt 379 Stake Bed with Outrigger
+  - 1997 BMW F650 ST
+  - 1997 BMW R 1100 S
+  - 1998 Chrysler Plymouth Prowler
+  - 1999 Indy 500 Monte Carlo SS
+  - 1999 Yamaha Speed Boat
+  - 2001 Ferrari Enzo
+  - 2002 Chevy Corvette
+  - 2002 Suzuki XREO
+  - 2002 Yamaha YZR M1
+  - 2003 Harley-Davidson Eagle Drag Bike
+  - 'ATA: B757-300'
+  - Ability Series
+  - Able Series
+  - Act Edition
+  - Action Model
+  - Administration Edition
+  - Adult Edition
+  - Air Replica
+  - America West Airlines B757-200
+  - 'American Airlines: B767-300'
+  - 'American Airlines: MD-11S'
+  - Among Edition
+  - Arm Series
+  - Assume Edition
+  - Attention Model
+  - Become Model
+  - Behavior Series
+  - Best Edition
+  - Board Series
+  - Boeing X-32A JSF
+  - Book Edition
+  - Business Model
+  - Call Replica
+  - Candidate Edition
+  - Choose Replica
+  - City Series
+  - Claim Replica
+  - Classic Cars
+  - Collectable Wooden Train
+  - Concern Model
+  - Corsair F4U ( Bird Cage)
+  - Cost Edition
+  - Create Model
+  - Culture Edition
+  - Customer Series
+  - Cut Edition
+  - Democrat Series
+  - Develop Model
+  - Diamond T620 Semi-Skirted Tanker
+  - Dinner Replica
+  - Do Model
+  - Dream Replica
+  - During Model
+  - Easy Model
+  - Ever Edition
+  - Everyone Series
+  - Expect Series
+  - Experience Series
+  - F/A 18 Hornet 1/72
+  - Figure Edition
+  - Fill Replica
+  - Fine Series
+  - Fish Edition
+  - For Edition
+  - Garden Series
+  - Girl Edition
+  - Good Series
+  - Gun Series
+  - HMS Bounty
+  - Interesting Edition
+  - Just Series
+  - Know Replica
+  - Land Series
+  - Last Model
+  - Less Series
+  - Letter Model
+  - Life Model
+  - Light Series
+  - Like Model
+  - Like Series
+  - Listen Edition
+  - Market Series
+  - Material Model
+  - Me Model
+  - Million Model
+  - Motorcycles
+  - Movie Edition
+  - Mr Edition
+  - Must Replica
+  - Nature Replica
+  - New Model
+  - North Series
+  - Officer Edition
+  - Oil Model
+  - Only Replica
+  - P-51-D Mustang
+  - Pattern Replica
+  - Pay Model
+  - Pay Series
+  - Performance Model
+  - Personal Series
+  - Phone Model
+  - Planes
+  - Pont Yacht
+  - Price Edition
+  - Price Series
+  - Probably Edition
+  - Project Series
+  - Prove Series
+  - Pull Series
+  - Recently Edition
+  - Represent Model
+  - Responsibility Model
+  - Reveal Replica
+  - Safe Edition
+  - Season Edition
+  - Season Series
+  - Senior Replica
+  - Shake Edition
+  - Share Edition
+  - Ships
+  - Short Model
+  - Shoulder Series
+  - Show Replica
+  - Side Model
+  - Single Series
+  - Sometimes Replica
+  - South Model
+  - Standard Edition
+  - Tax Series
+  - The Mayflower
+  - The Queen Mary
+  - The Schooner Bluenose
+  - The Titanic
+  - The USS Constitution Ship
+  - Thing Replica
+  - Tonight Replica
+  - Total Sales
+  - Trains
+  - Treatment Model
+  - Trucks and Buses
+  - View Model
+  - Vintage Cars
+  - Walk Replica
+  - Want Edition
+  - Way Replica
+  - West Series
+  - What Edition
+  - What Series
+  - Who Edition
+  - Wide Series
+  - Woman Replica
+  - Work Model
+  - World Model
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+  stagger_refresh: true
+  native_filter_configuration:
+  - cascadeParentIds: []
+    controlValues:
+      defaultToFirstItem: false
+      enableEmptyFilter: false
+      inverseSelection: false
+      multiSelect: true
+      searchAllOptions: false
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    description: ''
+    filterType: filter_select
+    id: NATIVE_FILTER-YkAw5rSgSFfXO6iizv8kv
+    name: Country
+    scope:
+      excluded:
+      - 121
+      - 123
+      - 136
+      rootPath:
+      - ROOT_ID
+    targets:
+    - column:
+        name: country
+      datasetUuid: d378a689-2396-4545-939c-38e04dcab681
+    type: NATIVE_FILTER
+    chartsInScope:
+    - 124
+    - 125
+    - 126
+    - 127
+    tabsInScope: []
+version: 1.0.0

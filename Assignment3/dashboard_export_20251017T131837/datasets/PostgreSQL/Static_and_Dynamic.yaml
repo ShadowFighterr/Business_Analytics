@@ -1,0 +1,87 @@
+table_name: Static and Dynamic
+main_dttm_col: paymentdate
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: postgres
+schema: classicmodels
+sql: "-- 1. Select data from the dynamic (live database) source\nSELECT\n    p.amount,\n\
+  \    p.paymentdate,\n    c.customername,\n    'Dynamic File (Live DB)' AS source_type\
+  \  -- Label for the dynamic line\nFROM\n    payments p\nJOIN\n    customers c ON\
+  \ p.customerNumber = c.customerNumber -- FIX 1: Add the correct JOIN condition\n\
+  WHERE\n    p.paymentdate IS NOT NULL -- Optional: ensure only records with dates\
+  \ are compared\n\nUNION ALL\n\n-- 2. Select data from the static (CSV) source\n\
+  SELECT\n    amount,\n    CAST(paymentdate AS DATE) AS paymentdate, -- FIX 2: Explicitly\
+  \ cast the 'TEXT' paymentdate to DATE\n    customername,\n    'Static File (CSV)'\
+  \ AS source_type  -- Label for the static line\nFROM\n    \"static file\"\nWHERE\n\
+  \    paymentdate IS NOT NULL -- Optional: ensure only records with dates are compared\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 818dea5e-2c9e-4e23-9f52-e9855239b739
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: paymentdate
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: DATE
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: amount
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: FLOAT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: source_type
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: customername
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: a22ae435-38c4-4041-aac3-d8ce11a1ce4c

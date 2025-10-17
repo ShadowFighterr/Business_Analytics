@@ -1,0 +1,72 @@
+slice_name: Sales Volume Over Time
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_line
+params:
+  datasource: 28__table
+  viz_type: echarts_timeseries_line
+  x_axis: orderdate
+  time_grain_sqla: P1D
+  metrics:
+  - expressionType: SQL
+    sqlExpression: SUM(priceeach * quantityordered)
+    column: null
+    aggregate: null
+    datasourceWarning: true
+    hasCustomLabel: true
+    label: Daily Sales Total
+    optionName: metric_2jo0my8w9hl_03stza47caj6
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    subject: orderdate
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  row_limit: 1000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  x_axis_title_margin: 15
+  y_axis_title_margin: 30
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  time_shift_color: true
+  seriesType: line
+  only_total: true
+  opacity: 0.2
+  markerSize: 6
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  rich_tooltip: true
+  showTooltipTotal: true
+  tooltipTimeFormat: smart_date
+  y_axis_format: SMART_NUMBER
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  extra_form_data: {}
+  dashboards:
+  - 12
+query_context: '{"datasource":{"id":28,"type":"table"},"force":false,"queries":[{"filters":[{"col":"orderdate","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":[{"timeGrain":"P1D","columnType":"BASE_AXIS","sqlExpression":"orderdate","label":"orderdate","expressionType":"SQL"}],"metrics":[{"expressionType":"SQL","sqlExpression":"SUM(priceeach
+  * quantityordered)","column":null,"aggregate":null,"datasourceWarning":true,"hasCustomLabel":true,"label":"Daily
+  Sales Total","optionName":"metric_2jo0my8w9hl_03stza47caj6"}],"orderby":[[{"expressionType":"SQL","sqlExpression":"SUM(priceeach
+  * quantityordered)","column":null,"aggregate":null,"datasourceWarning":true,"hasCustomLabel":true,"label":"Daily
+  Sales Total","optionName":"metric_2jo0my8w9hl_03stza47caj6"},false]],"annotation_layers":[],"row_limit":1000,"series_columns":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["orderdate"],"columns":[],"aggregates":{"Daily
+  Sales Total":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"flatten"}]}],"form_data":{"datasource":"28__table","viz_type":"echarts_timeseries_line","x_axis":"orderdate","time_grain_sqla":"P1D","metrics":[{"expressionType":"SQL","sqlExpression":"SUM(priceeach
+  * quantityordered)","column":null,"aggregate":null,"datasourceWarning":true,"hasCustomLabel":true,"label":"Daily
+  Sales Total","optionName":"metric_2jo0my8w9hl_03stza47caj6"}],"groupby":[],"adhoc_filters":[{"clause":"WHERE","subject":"orderdate","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"row_limit":1000,"truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"x_axis_title_margin":15,"y_axis_title_margin":30,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"supersetColors","time_shift_color":true,"seriesType":"line","only_total":true,"opacity":0.2,"markerSize":6,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","rich_tooltip":true,"showTooltipTotal":true,"tooltipTimeFormat":"smart_date","y_axis_format":"SMART_NUMBER","truncateXAxis":true,"y_axis_bounds":[null,null],"extra_form_data":{},"dashboards":[12],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 51abb65c-7fbd-4f85-995c-5de74474272d
+version: 1.0.0
+dataset_uuid: d378a689-2396-4545-939c-38e04dcab681

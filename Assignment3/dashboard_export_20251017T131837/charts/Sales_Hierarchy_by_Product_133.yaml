@@ -1,0 +1,47 @@
+slice_name: Sales Hierarchy by Product
+description: null
+certified_by: null
+certification_details: null
+viz_type: sunburst_v2
+params:
+  datasource: 28__table
+  viz_type: sunburst_v2
+  columns:
+  - productline
+  - productname
+  metric:
+    expressionType: SQL
+    sqlExpression: SUM(priceeach * quantityordered)
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: Total Sales
+    optionName: metric_d3g7iv00gfb_823yfl489wq
+  adhoc_filters:
+  - clause: WHERE
+    subject: orderdate
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  row_limit: 10000
+  color_scheme: supersetColors
+  linear_color_scheme: superset_seq_1
+  show_labels_threshold: 5
+  label_type: key
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 12
+query_context: '{"datasource":{"id":28,"type":"table"},"force":false,"queries":[{"filters":[{"col":"orderdate","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["productline","productname"],"metrics":[{"expressionType":"SQL","sqlExpression":"SUM(priceeach
+  * quantityordered)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Total
+  Sales","optionName":"metric_d3g7iv00gfb_823yfl489wq"}],"annotation_layers":[],"row_limit":10000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"28__table","viz_type":"sunburst_v2","columns":["productline","productname"],"metric":{"expressionType":"SQL","sqlExpression":"SUM(priceeach
+  * quantityordered)","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Total
+  Sales","optionName":"metric_d3g7iv00gfb_823yfl489wq"},"adhoc_filters":[{"clause":"WHERE","subject":"orderdate","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"row_limit":10000,"color_scheme":"supersetColors","linear_color_scheme":"superset_seq_1","show_labels_threshold":5,"label_type":"key","number_format":"SMART_NUMBER","date_format":"smart_date","extra_form_data":{},"dashboards":[12],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 66d8f753-c9ab-469f-80c2-16d9e4df20aa
+version: 1.0.0
+dataset_uuid: d378a689-2396-4545-939c-38e04dcab681
