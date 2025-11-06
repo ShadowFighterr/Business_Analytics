@@ -1,120 +1,165 @@
-Assignment 4: Prometheus & Grafana Monitoring Stack
+# 🚀 Assignment 4: Prometheus & Grafana Monitoring Stack
 
-This project sets up a complete monitoring and visualization stack using Prometheus and Grafana, all containerized with Docker Compose. It is built to fulfill the requirements for Assignment 4.
+This project sets up a **complete monitoring and visualization stack** using **Prometheus** and **Grafana**, fully containerized with **Docker Compose**.
+It fulfills the requirements for **Assignment 4** by monitoring multiple data sources in real time.
 
-The stack monitors three different data sources:
+---
 
-A PostgreSQL Database (using postgres_exporter)
+## 📊 Overview
 
-The Host System's Metrics (using node_exporter)
+The stack monitors **three distinct data sources**:
 
-External API Data (using a custom Python exporter for live weather data)
+1. 🐘 **PostgreSQL Database** – monitored using **Postgres Exporter**
+2. 💻 **Host System Metrics** – collected via **Node Exporter**
+3. 🌦️ **External API Data (Weather)** – gathered from **Open-Meteo API** using a **custom Python exporter**
 
-Components
+---
 
-Prometheus: The monitoring server, collects and stores all metrics.
+## ⚙️ Components
 
-Grafana: The visualization platform, used to create dashboards from Prometheus data.
+| Component                  | Description                                                                                  |
+| -------------------------- | -------------------------------------------------------------------------------------------- |
+| **Prometheus**             | Core monitoring server that collects and stores metrics data                                 |
+| **Grafana**                | Visualization platform used to create and manage dashboards                                  |
+| **PostgreSQL Exporter**    | Scrapes metrics from your PostgreSQL database                                                |
+| **Node Exporter**          | Collects system-level metrics (CPU, RAM, Disk, etc.)                                         |
+| **Custom Python Exporter** | Fetches live weather data for *Astana* from the Open-Meteo API and exposes it for Prometheus |
 
-PostgreSQL Exporter: A service that scrapes metrics from a PostgreSQL database.
+---
 
-Node Exporter: A service that scrapes system-level metrics from the host machine (CPU, RAM, Disk, etc.).
+## 🧰 Prerequisites
 
-Custom Python Exporter: A Python script that fetches live weather data for Astana from the Open-Meteo API and exposes it for Prometheus to scrape.
+Before starting, ensure you have:
 
-How to Run This Project
+* 🐳 **Docker** and **Docker Compose**
+* 🐍 **Python 3.8+** and **pip**
+* 💾 A running **PostgreSQL database** (e.g., `classicmodels`) accessible from Docker
 
-Prerequisites
+---
 
-Docker and Docker Compose
+## 🪛 Step 1: Configuration
 
-Python 3.8+ and pip
+### 🧩 Database Connection
 
-A running PostgreSQL database (e.g., classicmodels) that is accessible to Docker.
+Open `docker-compose.yml` and update the **PostgreSQL Exporter** service environment variable:
 
-Step 1: Configuration
-
-Database Connection:
-Open the docker-compose.yml file. Find the postgres_exporter service and update the DATA_SOURCE_NAME environment variable with your correct PostgreSQL username, password, host IP, and database name.
-
+```yaml
 environment:
   DATA_SOURCE_NAME: "postgresql://YOUR_USER:YOUR_PASSWORD@YOUR_IP:5432/your_database?sslmode=disable"
+```
 
+> ⚠️ **Important:** Use your **host machine IP**, *not* `localhost`, so Docker containers can reach it.
 
-(Note: Use your host IP, not localhost, so the container can find it.)
+---
 
-Prometheus Targets:
-Open prometheus.yml. The targets are pre-configured to use the Docker service names (e.g., node_exporter:9100) and host.docker.internal:8000 for the custom exporter.
+### 📡 Prometheus Targets
 
-Step 2: Run the Monitoring Stack
+Check `prometheus.yml` — it comes pre-configured with:
 
-In your terminal, run the following command to start all the main services:
+* `node_exporter:9100` (System metrics)
+* `postgres_exporter:9187` (Database metrics)
+* `host.docker.internal:8000` (Custom Python exporter)
 
+---
+
+## 🏃‍♂️ Step 2: Run the Monitoring Stack
+
+Launch all main services with:
+
+```bash
 docker compose up -d
+```
 
+This will start:
 
-This will start Prometheus, Grafana, Node Exporter, and the PostgreSQL Exporter.
+* Prometheus
+* Grafana
+* Node Exporter
+* PostgreSQL Exporter
 
-Step 3: Run the Custom Python Exporter
+---
 
-This script must be run outside of Docker, on your host machine.
+## 🐍 Step 3: Run the Custom Python Exporter
 
-Create and activate a virtual environment:
+This exporter runs **outside Docker**, directly on your host machine.
 
+### Create and activate a virtual environment:
+
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
 
+### Install dependencies:
 
-Install dependencies:
-
+```bash
 pip install prometheus_client requests
+```
 
+### Run the exporter:
 
-Run the script:
-
+```bash
 python custom_exporter.py
+```
 
+✅ You should see:
 
-You should see Custom exporter started on http://localhost:8000. Leave this terminal running.
+```
+Custom exporter started on http://localhost:8000
+```
 
-Accessing the Services
+Keep this terminal open and running.
 
-Prometheus: http://localhost:9090
+---
 
-Go to Status > Targets to verify all services are UP.
+## 🌐 Accessing the Services
 
-Grafana: http://localhost:3000
+| Service        | URL                                            | Description                                                               |
+| -------------- | ---------------------------------------------- | ------------------------------------------------------------------------- |
+| **Prometheus** | [http://localhost:9090](http://localhost:9090) | Check `Status > Targets` to verify all exporters are *UP*                 |
+| **Grafana**    | [http://localhost:3000](http://localhost:3000) | Default login → **admin / admin** (or credentials from your compose file) |
 
-Login: admin / admin (or as set in your docker-compose.yml)
+---
 
-Importing the Dashboards
+## 📈 Importing Dashboards
 
-The three dashboards are included in this repository as .json files.
+Three Grafana dashboards are included:
 
-In Grafana, go to the Dashboards section on the left.
+| File                            | Dashboard          |
+| ------------------------------- | ------------------ |
+| `dashboard-database.json`       | PostgreSQL metrics |
+| `dashboard-node-exporter.json`  | System metrics     |
+| `dashboard-custom-weather.json` | Live weather data  |
 
-Click New > Import.
+### To import:
 
-Drag and drop one of the .json files (e.g., dashboard-database.json) into the upload area.
+1. Open Grafana → **Dashboards** → **New → Import**
+2. Drag & drop a `.json` dashboard file
+3. Select your **Prometheus** data source
+4. Click **Import**
+5. Repeat for all three dashboards
 
-Select your prometheus data source.
+---
 
-Click Import.
+## 🗂️ Repository Structure
 
-Repeat for the other two dashboard files.
+```
+📁 assignment4/
+├── docker-compose.yml              # Docker service definitions
+├── prometheus.yml                  # Prometheus scrape configuration
+├── custom_exporter.py              # Custom weather data exporter
+├── dashboard-database.json         # Grafana dashboard (PostgreSQL)
+├── dashboard-node-exporter.json    # Grafana dashboard (System)
+├── dashboard-custom-weather.json   # Grafana dashboard (Weather)
+└── README.md                       # This file 😄
+```
 
-Repository Files
+---
 
-docker-compose.yml: Defines all Docker services.
+## 🌟 Final Notes
 
-prometheus.yml: Prometheus configuration file with all scrape targets.
+Once everything is up:
 
-custom_exporter.py: Python script to fetch live weather data for Dashboard 3.
-
-dashboard-database.json: Grafana dashboard for PostgreSQL metrics (Dashboard 1).
-
-dashboard-node-exporter.json: Grafana dashboard for system metrics (Dashboard 2).
-
-dashboard-custom-weather.json: Grafana dashboard for live weather data (Dashboard 3).
-
-README.md: This file.
+* Prometheus continuously scrapes data from all sources
+* Grafana visualizes it beautifully across your dashboards
+* You can monitor system performance, database activity, and live Astana weather — all in real time 🌤️
