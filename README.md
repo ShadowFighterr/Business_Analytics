@@ -27,6 +27,27 @@ pgloader mysql://user:password@host/source_db \
 ## 🗂️ Dataset Completion
 
 Since the dataset wasn’t large enough for further research, I created a **Python script (`script.py`)** to generate additional synthetic data and enrich the database.
+### 🔒 Environment Variables
+
+Before running the script, set the following environment variables for database connection:
+
+```bash
+export DB_HOST=localhost        # Database host (default: localhost)
+export DB_PORT=5432            # Database port (default: 5432)
+export DB_NAME=postgres        # Database name (default: postgres)
+export DB_USER=postgres        # Database user (default: postgres)
+export DB_PASSWORD=your_password_here  # Database password (required)
+```
+
+### 🚀 Running the Script
+
+```bash
+# Set your database password
+export DB_PASSWORD=your_actual_password
+
+# Run the data generation script
+python3 script.py
+```
 
 ---
 
